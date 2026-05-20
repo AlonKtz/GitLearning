@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Dev Notes</h1>
+      <p class="subtitle">A place to keep your thoughts.</p>
+    </header>
+
+    <div class="controls">
+      <input
+        type="text"
+        id="note-input"
+        placeholder="Write a note..."
+        autocomplete="off"
+      />
+      <select id="category-select">
+        <option value="general">General</option>
+        <option value="bug">Bug</option>
+        <option value="idea">Idea</option>
+        <option value="todo">To-Do</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="general">General</button>
+      <button class="filter-btn" data-filter="bug">Bug</button>
+      <button class="filter-btn" data-filter="idea">Idea</button>
+      <button class="filter-btn" data-filter="todo">To-Do</button>
+    </div>
+
+    <ul id="notes-list"></ul>
+
+    <footer>
+      <span id="note-count">0 notes</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
