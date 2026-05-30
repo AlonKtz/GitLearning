@@ -1,6 +1,7 @@
 # Dev Notes — Git Practice App
 
 A simple note-taking app you can use to practice real git workflows.
+Training buily by claude code
 
 ## Files
 
